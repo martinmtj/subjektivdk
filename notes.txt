@@ -1,4 +1,4 @@
-Wifi
+** Wifi **
 iwlist wlan0 scan
 
 sudo nano /etc/network/interfaces
@@ -12,12 +12,12 @@ network={
 }
 
 
-SQLite
+** SQLite **
 sqlite3 databasename.db
 >SELECT * FROM tablename;
 >SELECT * FROM tablename WHERE temp > 30;
 >.tables
 >.schema
 
-Programmer der kan fjernes
+** Programmer der kan fjernes **
 Scratch
