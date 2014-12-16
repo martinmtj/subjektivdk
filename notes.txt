@@ -2,7 +2,22 @@
 iwlist wlan0 scan
 
 sudo nano /etc/network/interfaces
-     
+
+Opsætning af wifi dongle - statisk IP:
+$ sudo nano /etc/network/interfaces
+
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet static
+address 192.168.1.13
+netmask 255.255.255.0
+gateway 192.168.1.1
+wpa-ssid "SSID"
+wpa-psk "PASSWORD"
 
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 network={
@@ -11,7 +26,7 @@ network={
         key_mgmt=WPA-PSK
 }
 
-
+---------------------------------------
 ** SQLite **
 sqlite3 databasename.db
 >SELECT * FROM tablename;
@@ -19,5 +34,6 @@ sqlite3 databasename.db
 >.tables
 >.schema
 
+---------------------------------------
 ** Programmer der kan fjernes **
 Scratch
