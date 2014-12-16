@@ -17,6 +17,3 @@ set timefmt '%Y-%m-%d %H:%M:%S'
 plot 'temp.csv' using 1:3 smooth bezier with lines title 'Indoor' 
 
 EOF
-
-#
-##wput -R plotfile.png ftp://USER:PASSWORD@voresserver.dk/sommerhus/
