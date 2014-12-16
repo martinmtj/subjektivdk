@@ -37,3 +37,22 @@ sqlite3 databasename.db
 ---------------------------------------
 ** Programmer der kan fjernes **
 Scratch
+
+
+---------------------------------------
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+5d:92:99:25:d9:d3:31:49:68:85:22:8f:6e:eb:39:b7.
+Please contact your system administrator.
+Add correct host key in /Users/Martin/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /Users/Martin/.ssh/known_hosts:1
+RSA host key for 192.168.1.13 has changed and you have requested strict checking.
+Host key verification failed.
+
+Løsning ->
+$ ssh-keygen -R <IP address>
