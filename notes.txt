@@ -1,0 +1,23 @@
+Wifi
+iwlist wlan0 scan
+
+sudo nano /etc/network/interfaces
+     
+
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+network={
+        ssid="YourSSID"
+        psk="password"
+        key_mgmt=WPA-PSK
+}
+
+
+SQLite
+sqlite3 databasename.db
+>SELECT * FROM tablename;
+>SELECT * FROM tablename WHERE temp > 30;
+>.tables
+>.schema
+
+Programmer der kan fjernes
+Scratch
